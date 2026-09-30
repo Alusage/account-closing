@@ -4,7 +4,7 @@
 
 {
     "name": "Account Cut-off Base",
-    "version": "18.0.1.0.1",
+    "version": "20.0.1.0.1",
     "category": "Accounting & Finance",
     "summary": "Base module for Account Cut-offs",
     "author": "Akretion,Odoo Community Association (OCA)",
@@ -13,7 +13,7 @@
     "depends": ["account"],
     "data": [
         "security/account_cutoff_base_security.xml",
-        "security/ir.model.access.csv",
+        "security/ir.access.csv",
         "views/res_config_settings.xml",
         "views/account_cutoff.xml",
         "views/account_cutoff_line.xml",
