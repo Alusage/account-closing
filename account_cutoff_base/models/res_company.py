@@ -94,7 +94,7 @@ class ResCompany(models.Model):
                 .with_company(self.id)
                 .search(
                     [
-                        ("deprecated", "=", False),
+                        ("active", "=", True),
                         ("company_ids", "in", self.id),
                         ("code", "=like", f"{setup_value}%"),
                     ],

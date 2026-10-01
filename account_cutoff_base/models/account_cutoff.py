@@ -86,7 +86,7 @@ class AccountCutoff(models.Model):
     cutoff_account_id = fields.Many2one(
         comodel_name="account.account",
         string="Cut-off Account",
-        domain="[('deprecated', '=', False), ('company_ids', 'in', company_id)]",
+        domain="[('active', '=', True), ('company_ids', 'in', company_id)]",
         compute="_compute_cutoff_account_id",
         store=True,
         readonly=False,
